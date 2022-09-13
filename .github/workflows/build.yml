@@ -36,3 +36,11 @@ jobs:
 
       - name: Lint CLI
         uses: golangci/golangci-lint-action@v2
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: railway
+          path: railway
+
+
